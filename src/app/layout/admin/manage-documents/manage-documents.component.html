@@ -47,7 +47,7 @@
                         </ng-container>
                         <ng-container *ngFor="let link of question.Links;">
                           <li>
-                            <p><a href="{{link.Link}}" target="_blank">{{link?.Link}}</a> </p>
+                            <p><a href="{{link.Link}}" target="_blank" rel="noopener noreferrer">{{link?.Link}}</a> </p>
                             <button type="button" (click)="removeLink(link?.Id)"><img src="assets/images/cross-icon.svg"
                                 alt="cross" /></button>
                           </li>
